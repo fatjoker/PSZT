@@ -59,7 +59,7 @@ Path PathFinder::A_star(Node& source, Node& target)
 
 			if (visitedNodes.count(otherNode) != 1) 
 			{// other city was not visited yet
-				float otherCost = cost + edge.cost() + h(*node, source);				
+				float otherCost = cost + edge.cost() + h(*node, target);				
 				NodeCost otherNC = NodeCost(otherCost, otherNode);
 				otherNC.rawCost = cost + edge.cost();
 				
