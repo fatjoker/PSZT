@@ -25,7 +25,7 @@ NodeCost is used in a priority_queue used in A* algorithm
 */
 struct NodeCost {
 	float cost; // cost + h(node)
-	float rawCost; // cost of edges no including h(node)
+	float rawCost; // cost of edges not including h(node)
 
 	Node* node;
 
